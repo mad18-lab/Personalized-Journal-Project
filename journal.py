@@ -1,0 +1,12 @@
+journal = open("journal.txt", "w")
+journal.write("Date: ")
+date = input("Enter date: ")
+journal.write(date+'\n')
+journal.write("Entry: ")
+entry = str(input("Enter journal entry: "))
+journal.write(entry+'\n')
+journal.close()
+
+journal = open("journal.txt", "r")
+print(journal.read())
+journal.close()
